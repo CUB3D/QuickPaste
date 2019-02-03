@@ -2,11 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -30,8 +25,14 @@
   background-color: #404040;
 }
 
+body {
+    background-color: #282c34;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: max-content;
+}
+
 .Edit {
-  background-color: #282c34;
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
@@ -42,23 +43,26 @@
 
 .Edit-text {
   resize: none;
-  horiz-align: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0;
   display: block;
   width: calc(100% - 20px);
-  height: calc(100vh - 20px);
+  height: calc(100% - 10px);
+  font-size: 12pt;
+}
+
+.Edit-Status {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.Edit-Status-Element {
+    margin: 0;
+    padding: 0;
 }
 
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
